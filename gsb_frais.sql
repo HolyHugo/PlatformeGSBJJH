@@ -11,7 +11,10 @@ DROP TABLE IF EXISTS `Absence`;
 CREATE TABLE `Absence` (
   `DateDebut` date NOT NULL,
   `refVisiteur` varchar(4) NOT NULL,
-  `nbjour` int(11) NOT NULL
+  `nbjour` int(11) NOT NULL,
+  PRIMARY KEY (`DateDebut`,`refVisiteur`),
+  KEY `refVisiteur` (`refVisiteur`),
+  CONSTRAINT `Absence_ibfk_1` FOREIGN KEY (`refVisiteur`) REFERENCES `Visiteur` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -134,4 +137,4 @@ INSERT INTO `Visiteur` (`id`, `nom`, `prenom`, `login`, `mdp`, `adresse`, `cp`, 
 ('f39',	'Frémont',	'Fernande',	'ffremont',	'xs5tq',	'4 route de la mer',	'13012',	'Allauh',	'1998-10-01'),
 ('f4',	'Gest',	'Alain',	'agest',	'dywvt',	'30 avenue de la mer',	'13025',	'Berre',	'1985-11-01');
 
--- 2017-09-28 09:22:34
+-- 2017-09-28 09:24:45
