@@ -297,5 +297,12 @@ class PdoGsb{
 		where FicheFrais.idVisiteur ='$idVisiteur' and FicheFrais.mois = '$mois'";
 		PdoGsb::$monPdo->exec($req);
 	}
+	
+	public function creeNouveauAbsence($idVisiteur,$date,$nbjour,$refMotif){
+		$dateFr = dateFrancaisVersAnglais($date);
+		$req = "insert into Absence 
+		values('','$idVisiteur','$nbjour','$dateFr','$refMotif')";
+		PdoGsb::$monPdo->exec($req);
+	}
 }
 ?>
