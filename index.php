@@ -21,6 +21,13 @@ switch($uc){
 	case 'etatFrais' :{
 		include("controleurs/c_etatFrais.php");break; 
 	}
+	
+	case 'gererAbsence' :{
+		include("controleurs/c_gererAbsence.php");break; 
+	}
+	case 'etatAbsence' :{
+		include("controleurs/c_etatAbsence.php");break; 
+	}
 }
 include("vues/v_pied.php") ;
 ?>
