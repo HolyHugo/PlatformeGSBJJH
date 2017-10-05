@@ -20,7 +20,7 @@
            </li>
            
            <li class="smenu">
-              <a href="index.php?uc=gererAbsence&action=landing" title="Consultation de mes fiches de mes absences">Saisie absences</a>
+              <a href="index.php?uc=gererAbsence&action=creeNouvelleAbsence" title="Consultation de mes fiches de mes absences">Saisie absences</a>
            </li>
 
            <li class="smenu">
