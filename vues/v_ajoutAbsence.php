@@ -4,7 +4,7 @@
 <form method='POST' action='index.php?uc=gererAbsence&action=creeNouvelleAbsence'>
 <table class='tabNonQuadrille'>
 <tr>
-	<td>Date de l'absence (aaaa/mm/jj)</td>
+	<td>Date de l'absence (aaaa-mm-jj)</td>
 	<td>
 		<input  type='date' name=DateDebut size='30' maxlength='50'>
 	</td>
