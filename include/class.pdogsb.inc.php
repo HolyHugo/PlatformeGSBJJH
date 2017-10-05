@@ -298,11 +298,10 @@ class PdoGsb{
 		PdoGsb::$monPdo->exec($req);
 	}
 	
-	public function creeNouveauAbsence($idVisiteur,$date,$nbjour,$refMotif){
-		$dateFr = dateFrancaisVersAnglais($date);
-		$req = "insert into Absence 
-		values('','$idVisiteur','$nbjour','$dateFr','$refMotif')";
+/*	public function creeNouvelleAbsence($DateDebut,$refVisiteur,$nbjour,$refMotif){
+		$req = "insert into Absence(DateDebut,refVisiteur,nbjour,refMotif)
+		values('','$DateDebut','$refVisiteur','$nbjour','$refMotif')";
 		PdoGsb::$monPdo->exec($req);
-	}
+	}*/
 }
 ?>

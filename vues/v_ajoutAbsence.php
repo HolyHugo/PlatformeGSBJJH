@@ -1,24 +1,24 @@
 <?php
 	echo "<body>
 				<h3>Ajouter une nouvelle absence </h3>
-<form method='POST' action='index.php?uc=gererAbsence&action=validerCreationAbsence'>
+<form method='POST' action='index.php?uc=gererAbsence&action=creeNouvelleAbsence'>
 <table class='tabNonQuadrille'>
 <tr>
-	<td>Date de l'absence (jj/mois/aaaa)</td>
+	<td>Date de l'absence (aaaa/mm/jj)</td>
 	<td>
-		<input  type='text' name=nbJour size='30' maxlength='5'>
+		<input  type='date' name=DateDebut size='30' maxlength='50'>
 	</td>
 </tr>
 <tr>
 	<td>Motif de l'absence</td>
 	<td>
-		<input  type='text' name=Motif  size='50' maxlength='100'>
+		<input  type='text' name=refMotif  size='50' maxlength='100'>
 	</td>
 </tr>
 <tr>
-	<td>Montant engage</td>
+	<td>Nombre de jour</td>
 	<td>
-		<input  type='text' name=montant  size='30' maxlength='45'>
+		<input  type='text' name=nbjour size='30' maxlength='45'>
 	</td>
 </tr>
 
